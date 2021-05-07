@@ -5,7 +5,7 @@
 osmium tags-filter -O -o tmp/boundary-ne.pbf download/us-northeast-latest.osm.pbf r/boundary=administrative
 osmium tags-filter -O -o tmp/boundary-nb.pbf download/new-brunswick-latest.osm.pbf r/boundary=administrative
 osmium tags-filter -O -o tmp/boundary-qc.pbf download/quebec-latest.osm.pbf r/boundary=administrative
-	
+
 osmium tags-filter -O -o tmp/boundary4-ne.pbf tmp/boundary-ne.pbf r/boundary=administrative
 osmium tags-filter -O -o tmp/boundary4-nb.pbf tmp/boundary-nb.pbf r/boundary=administrative
 osmium tags-filter -O -o tmp/boundary4-qc.pbf tmp/boundary-qc.pbf r/boundary=administrative
