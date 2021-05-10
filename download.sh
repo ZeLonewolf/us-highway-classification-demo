@@ -9,6 +9,9 @@ fi
 if [ ! -f download/quebec-latest.osm.pbf ]; then
     wget -O download/quebec-latest.osm.pbf https://download.geofabrik.de/north-america/canada/quebec-latest.osm.pbf
 fi
-if [ ! -f download/us-northeast-latest.osm.pbf ]; then
-    wget -O download/us-northeast-latest.osm.pbf https://download.geofabrik.de/north-america/us-northeast-latest.osm.pbf
-fi
+
+./download_extract_us.sh northeast
+./download_extract_us.sh midwest
+./download_extract_us.sh pacific
+./download_extract_us.sh south
+./download_extract_us.sh west
